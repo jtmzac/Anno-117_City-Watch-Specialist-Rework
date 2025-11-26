@@ -10,17 +10,6 @@
     "English": "City Watch Specialist Rework"
   },
   "Description": {
-    "English": "Alters the common, rare and epic city watch specialists to buff all of their city watch type across the island with extra patrol units and a scaling buff to their type"
-  },
-  "Options": {
-    "commonBuffStrength": {
-      "default": "0.3"
-    },
-    "rareBuffStrength": {
-      "default": "0.6"
-    },
-    "epicBuffStrength": {
-      "default": "1.0"
-    }
+    "English": "Alters the common, rare and epic city watch specialists to buff all of their city watch type across the island with a scaling buff of their type"
   }
 }
