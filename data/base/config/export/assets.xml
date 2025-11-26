@@ -1,0 +1,636 @@
+
+
+
+<ModOps>
+  <ModOp Add="/AssetList/Groups[last()]"><Group><Assets /></Group></ModOp>
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--                Fire                -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+
+  <ModOp Merge="@54009/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Remove="@54010/CityInstitutionUpgrade"/>
+  <ModOp Merge="@54010">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300000</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+  <ModOp Merge="@54011/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Remove="@54012/BuildingUpgrade/AdditionalAttributes"/>
+  <ModOp Merge="@54012">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300002</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+  <ModOp Merge="@42052/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Merge="@42600">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300004</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+
+
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID> 1400300000</GUID>
+        <Name>Specialist Incident C Fire Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_62.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300001</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6901145479896629321</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300001</GUID>
+        <Name>Specialist Incident C Fire Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_62.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6901145479896629321</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <FireSafety>
+            <AmountOrPercent>
+              <Value>0.3</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </FireSafety>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300002</GUID>
+        <Name>Specialist Incident R Fire Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_female/icon_3d_roman_female_011.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300003</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6911190894807595954</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300003</GUID>
+        <Name>Specialist Incident R Fire Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_female/icon_3d_roman_female_011.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6911190894807595954</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <FireSafety>
+            <AmountOrPercent>
+              <Value>0.6</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </FireSafety>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300004</GUID>
+        <Name>Specialist Incident E Fire Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/nonbinary/icon_3d_celtic_nb_02.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300005</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6911307630797649706</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300005</GUID>
+        <Name>Specialist Incident E Fire Custom FunctionalEffect Buff</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/nonbinary/icon_3d_celtic_nb_02.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6911307630797649706</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <FireSafety>
+            <AmountOrPercent>
+              <Value>1.0</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </FireSafety>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+
+
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--                Health              -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+
+  <ModOp Merge="@54015/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Remove="@54016/CityInstitutionUpgrade"/>
+  <ModOp Merge="@54016">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300006</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+  <ModOp Merge="@54017/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Remove="@54018/BuildingUpgrade/AdditionalAttributes"/>
+  <ModOp Merge="@54018">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300008</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+  <ModOp Merge="@80494/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Merge="@80495">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300010</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300006</GUID>
+        <Name>Specialist Incident C Illness Custom FunctionalEffect</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_female/icon_3d_roman_female_023.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300007</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6900298379211342136</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300007</GUID>
+        <Name>Specialist Incident C Illness Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_female/icon_3d_roman_female_023.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6900298379211342136</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Health>
+            <AmountOrPercent>
+              <Value>0.3</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Health>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300008</GUID>
+        <Name>Specialist Incident R Illness Custom FunctionalEffect</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_female/icon_3d_roman_female_016.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300009</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6907524579382418778</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300009</GUID>
+        <Name>Specialist Incident R Illness Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_female/icon_3d_roman_female_016.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6907524579382418778</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Health>
+            <AmountOrPercent>
+              <Value>0.6</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Health>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300010</GUID>
+        <Name>Specialist Incident E Illness Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/celtic_male/icon_3d_celtic_male_003.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300011</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6907810660380830894</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300011</GUID>
+        <Name>Specialist Incident E Illness Custom FunctionalEffect Buff</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/celtic_male/icon_3d_celtic_male_003.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6907810660380830894</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Health>
+            <AmountOrPercent>
+              <Value>1.0</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Health>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--             Happiness              -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+
+  <ModOp Merge="@54021/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Remove="@54022/CityInstitutionUpgrade"/>
+  <ModOp Merge="@54022">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300012</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+  <ModOp Merge="@54023/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Remove="@54024/BuildingUpgrade/AdditionalAttributes"/>
+  <ModOp Merge="@54024">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300014</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+  <ModOp Merge="@42051/Effect">
+    <EffectScope>ObjectsInArea</EffectScope>
+  </ModOp>
+  <ModOp Merge="@42612">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300016</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+  </ModOp>
+
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300012</GUID>
+        <Name>Specialist Incident C Riot Custom FunctionalEffect</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/other_male/icon_3d_other_male_009.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300013</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6916250455637987611</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300013</GUID>
+        <Name>Specialist Incident C Riot Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/other_male/icon_3d_other_male_009.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6916250455637987611</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Happiness>
+            <AmountOrPercent>
+              <Value>0.3</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Happiness>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300014</GUID>
+        <Name>Specialist Incident R Riot Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_031.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300015</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6900127770559453799</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300015</GUID>
+        <Name>Specialist Incident R Riot Custom FunctionalEffect Buff</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_031.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6900127770559453799</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Happiness>
+            <AmountOrPercent>
+              <Value>0.6</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Happiness>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300016</GUID>
+        <Name>Specialist Incident E Riot Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_006.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300017</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6909450567319782478</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300017</GUID>
+        <Name>Specialist Incident E Riot Custom FunctionalEffect Buff</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_006.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6909450567319782478</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Happiness>
+            <AmountOrPercent>
+              <Value>1.0</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Happiness>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+</ModOps>
+
+

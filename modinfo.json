@@ -1,0 +1,26 @@
+{
+  "Anno": 8,
+  "ModID": "city-watch-specialist-rework-jtmzac",
+  "Version": "1.0.0",
+  "Difficulty": "easier",
+  "Category": {
+    "English": "Gameplay"
+  },
+  "ModName": {
+    "English": "City Watch Specialist Rework"
+  },
+  "Description": {
+    "English": "Alters the common, rare and epic city watch specialists to buff all of their city watch type across the island with extra patrol units and a scaling buff to their type"
+  },
+  "Options": {
+    "commonBuffStrength": {
+      "default": "0.3"
+    },
+    "rareBuffStrength": {
+      "default": "0.6"
+    },
+    "epicBuffStrength": {
+      "default": "1.0"
+    }
+  }
+}
