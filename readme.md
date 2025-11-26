@@ -13,8 +13,8 @@ The buff values may be wildy unbalanced depending on difficulty settings and oth
 | Epic       | 1.0    |
 
 ## Customisation
-If you do not like the provided values then to change then please edit the appropriate sections in the mods assets.xml.
+If you do not like the provided values then to change them please edit the appropriate sections in the mods assets.xml.
 
 The file is rather long due to the needed xml structure but there is 3 values for each of the FireSafety, Health and Happiness.
 
-You may need to remove and re-add the specialists to your officia/villa to apply new values
+You may need to remove and re-add the specialists to your officium/villa to apply new values
