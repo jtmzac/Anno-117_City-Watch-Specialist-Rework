@@ -12,8 +12,8 @@ The buff values may be wildy unbalanced depending on difficulty settings and oth
 | Rare       | 0.6   |
 | Epic       | 1.0    |
 
-## Compatibility with Specalist Pools Rebalance
-If you use my other mod that removes these specalists by default (Specialist Pools Rebalance) then they will be re-added to the pool at the non-Roman trader in Albion (Manx)
+## Compatibility with Specialist Pools Rebalance
+If you use my other mod that removes these specialists by default (Specialist Pools Rebalance) then they will be re-added to the pool at the non-Roman trader in Albion (Manx)
 
 ## Customisation
 If you do not like the provided values then to change them please edit the appropriate sections in the mods assets.xml.
