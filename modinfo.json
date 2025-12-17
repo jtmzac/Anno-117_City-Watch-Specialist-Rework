@@ -1,7 +1,7 @@
 {
   "Anno": 8,
   "ModID": "city-watch-specialist-rework-jtmzac",
-  "Version": "1.0.2",
+  "Version": "1.1.0",
   "Difficulty": "easier",
   "Category": {
     "English": "Gameplay"
@@ -10,6 +10,6 @@
     "English": "City Watch Specialist Rework"
   },
   "Description": {
-    "English": "Alters the common, rare and epic city watch specialists to buff all of their city watch type across the island with a scaling buff of their type"
+    "English": "Changes city watch specialists to affect all of their respective building types on the island and gives each building a small area buff of the relevant type (fire safety/health/happiness)"
   }
 }

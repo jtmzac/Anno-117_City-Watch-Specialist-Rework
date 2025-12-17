@@ -1,8 +1,16 @@
 
 
 
+
 <ModOps>
   <ModOp Add="/AssetList/Groups[last()]"><Group><Assets /></Group></ModOp>
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!--                                   Common, Rare, Epic                                   -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
 
   <!-- |||||||||||||||||||||||||||||||||| -->
   <!--                Fire                -->
@@ -630,6 +638,381 @@
       </Buff>
     </Values>
   </Asset>
+
+
+
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+  <!--                                   Legendaries                                          -->
+  <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--                Fire                -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+
+  <ModOp Merge="@54025">
+    <Effect>
+      <EffectScope>ObjectsInArea</EffectScope>
+      <Buffs>
+          <Item>
+            <GUID>54026</GUID>
+          </Item>
+      </Buffs>
+    </Effect>
+		<ItemWithBoost>
+			<BoostBuffs>
+				<Item>
+					<GUID>54026</GUID>
+				</Item>
+			</BoostBuffs>
+		</ItemWithBoost>
+  </ModOp>
+  <ModOp Merge="@54026">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300018</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+    <CityInstitutionUpgrade>
+			<ResolverUnitCountUpgrade>
+				<Value>1</Value>
+				<Percental>0</Percental>
+			</ResolverUnitCountUpgrade>
+		</CityInstitutionUpgrade>
+  </ModOp>
+
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID> 1400300018</GUID>
+        <Name>Specialist Incident L Fire Custom FunctionalEffect</Name>
+        <IconFilename>data/ui/fhd/base/icon_content/items_specialist/celtic_male/icon_3d_celtic_male_011.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300019</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6912764738512741996</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300019</GUID>
+        <Name>Specialist Incident L Fire Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/celtic_male/icon_3d_celtic_male_011.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6912764738512741996</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <FireSafety>
+            <AmountOrPercent>
+              <Value>1.5</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </FireSafety>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--             Happiness              -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+
+  <ModOp Merge="@54041">
+    <Effect>
+      <EffectScope>ObjectsInArea</EffectScope>
+      <Buffs>
+          <Item>
+            <GUID>54042</GUID>
+          </Item>
+      </Buffs>
+    </Effect>
+		<ItemWithBoost>
+			<BoostBuffs>
+				<Item>
+					<GUID>54042</GUID>
+				</Item>
+			</BoostBuffs>
+		</ItemWithBoost>
+  </ModOp>
+  <ModOp Merge="@54042">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300020</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+    <CityInstitutionUpgrade>
+			<ResolverUnitCountUpgrade>
+				<Value>1</Value>
+				<Percental>0</Percental>
+			</ResolverUnitCountUpgrade>
+		</CityInstitutionUpgrade>
+  </ModOp>
+
+
+
+
+  <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300020</GUID>
+        <Name>Specialist Incident L Riot Custom FunctionalEffect</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_016.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300021</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6905064871793322484</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300021</GUID>
+        <Name>Specialist Incident L Riot Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/roman_male/icon_3d_roman_male_016.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6905064871793322484</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Happiness>
+            <AmountOrPercent>
+              <Value>1.5</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Happiness>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--             Health              -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+
+
+  <ModOp Merge="@54034">
+    <Effect>
+      <EffectScope>ObjectsInArea</EffectScope>
+      <Buffs>
+          <Item>
+            <GUID>54035</GUID>
+          </Item>
+      </Buffs>
+    </Effect>
+		<ItemWithBoost>
+			<BoostBuffs>
+				<Item>
+					<GUID>54035</GUID>
+				</Item>
+			</BoostBuffs>
+		</ItemWithBoost>
+  </ModOp>
+  <ModOp Merge="@54035">
+    <BuildingUpgrade>
+      <AdditionalFunctionalEffect>1400300022</AdditionalFunctionalEffect>
+    </BuildingUpgrade>
+    <CityInstitutionUpgrade>
+			<ResolverUnitCountUpgrade>
+				<Value>1</Value>
+				<Percental>0</Percental>
+			</ResolverUnitCountUpgrade>
+		</CityInstitutionUpgrade>
+  </ModOp>
+
+
+ <Asset>
+    <Template>Effect</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300022</GUID>
+        <Name>Specialist Incident L Illness Custom FunctionalEffect</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/celtic_female/icon_3d_celtic_female_006.png</IconFilename>
+      </Standard>
+      <Effect>
+        <EffectScope>StreetDistance</EffectScope>
+        <SourceCategory>Adjacency</SourceCategory>
+        <Buffs>
+          <Item>
+            <GUID>1400300023</GUID>
+          </Item>
+        </Buffs>
+        <Targets>
+          <Item>
+            <GUID>43097</GUID>
+          </Item>
+        </Targets>
+        <ExcludeEffectSourceGUID>1</ExcludeEffectSourceGUID>
+        <HideInGovernorsBar>1</HideInGovernorsBar>
+      </Effect>
+      <Text>
+        <OasisId>-6904428740713877251</OasisId>
+      </Text>
+    </Values>
+  </Asset>
+
+  <Asset>
+    <Template>BuildingBuff</Template>
+    <Values>
+      <Standard>
+        <GUID>1400300023</GUID>
+        <Name>Specialist Incident L Illness Custom FunctionalEffect Buff</Name>
+          <IconFilename>data/ui/fhd/base/icon_content/items_specialist/celtic_female/icon_3d_celtic_female_006.png</IconFilename>
+      </Standard>
+      <Text>
+        <OasisId>-6904428740713877251</OasisId>
+      </Text>
+      <HealthUpgrade />
+      <BuildingUpgrade>
+        <AdditionalAttributes>
+          <Health>
+            <AmountOrPercent>
+              <Value>1.5</Value>
+              <Percental>0</Percental>
+            </AmountOrPercent>
+          </Health>
+        </AdditionalAttributes>
+      </BuildingUpgrade>
+      <Buff>
+        <SourceCategory>Adjacency</SourceCategory>
+      </Buff>
+    </Values>
+  </Asset>
+
+
+
+  <!-- |||||||||||||||||||||||||||||||||| -->
+  <!--      Institutions & Amenities      -->
+  <!-- |||||||||||||||||||||||||||||||||| -->
+
+  <ModOp Merge="@51286">
+    <Effect>
+      <EffectScope>ObjectsInArea</EffectScope>
+      <Buffs>
+          <Item>
+            <GUID>51287</GUID>
+          </Item>
+      </Buffs>
+    </Effect>
+		<ItemWithBoost>
+			<BoostBuffs>
+				<Item>
+					<GUID>51287</GUID>
+				</Item>
+			</BoostBuffs>
+		</ItemWithBoost>
+  </ModOp>
+
+  <!-- Remove prestige -1 debuff and change income buff from +3 to +1 since its now island wide -->
+  <ModOp Remove="@140542/BuildingUpgrade/AdditionalAttributes/Prestige"></ModOp>
+  <ModOp Merge="@140542/BuildingUpgrade/AdditionalAttributes/Money/AmountOrPercent">
+    <Value>1</Value>
+  </ModOp>
+
+
+
+
+  <ModOp Merge="@107554">
+    <Effect>
+      <EffectScope>ObjectsInArea</EffectScope>
+      <Buffs>
+          <Item>
+            <GUID>107555</GUID>
+          </Item>
+      </Buffs>
+    </Effect>
+		<ItemWithBoost>
+			<BoostBuffs>
+				<Item>
+					<GUID>107555</GUID>
+				</Item>
+			</BoostBuffs>
+		</ItemWithBoost>
+  </ModOp>
+
+  <!-- Remove -1 knowledge debuff, change belief buff from +3 to +1, add +0.2 for fire/happiness/health -->
+  <ModOp Remove="@107557/BuildingUpgrade/AdditionalAttributes/Knowledge"></ModOp>
+  <ModOp Merge="@107557/BuildingUpgrade/AdditionalAttributes">
+    <Belief>
+      <AmountOrPercent>
+         <Value>1</Value>
+      </AmountOrPercent>
+    </Belief>
+    <FireSafety>
+      <AmountOrPercent>
+        <Value>0.2</Value>
+        <Percental>0</Percental>
+      </AmountOrPercent>
+    </FireSafety>
+    <Happiness>
+      <AmountOrPercent>
+        <Value>0.2</Value>
+        <Percental>0</Percental>
+      </AmountOrPercent>
+    </Happiness>
+    <Health>
+      <AmountOrPercent>
+        <Value>0.2</Value>
+        <Percental>0</Percental>
+      </AmountOrPercent>
+    </Health>
+  </ModOp>
+
+
+
+
+
 
 </ModOps>
 
